@@ -1,0 +1,15 @@
+com\hexaware\sprint2\controller\AdminController.class
+com\hexaware\sprint2\service\HotelService.class
+com\hexaware\sprint2\entity\Hotel.class
+com\hexaware\sprint2\service\UserService.class
+com\hexaware\sprint2\controller\RoomController.class
+com\hexaware\sprint2\controller\UserController.class
+com\hexaware\sprint2\Sprint2Application.class
+com\hexaware\sprint2\entity\User.class
+com\hexaware\sprint2\repository\HotelRepository.class
+com\hexaware\sprint2\entity\User$UserRole.class
+com\hexaware\sprint2\repository\RoomRepository.class
+com\hexaware\sprint2\repository\UserRepository.class
+com\hexaware\sprint2\controller\HotelController.class
+com\hexaware\sprint2\service\RoomService.class
+com\hexaware\sprint2\entity\Room.class
