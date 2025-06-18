@@ -1,0 +1,4 @@
+com\hexaware\restdemo1\controller\ProductController.class
+com\hexaware\restdemo1\Restdemo1Application.class
+com\hexaware\restdemo1\entity\Product.class
+com\hexaware\restdemo1\entity\ProductRepository.class
