@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@400;600;700;900&display=swap');
+
+body, html, #root, * {
+  font-family: 'Urbanist', 'Nunito Sans', 'Segoe UI', Arial, sans-serif !important;
+}
+
+.navbar {
+  box-shadow: 0 2px 8px rgba(10, 44, 69, 0.05);
+}
+
+.navbar-brand {
+  letter-spacing: 1.5px;
+}
+
+.navbar .nav-link {
+  position: relative;
+  transition: color 0.2s;
+}
+
+.navbar .nav-link:hover, .navbar .nav-link:focus {
+  color: #ff8900 !important;
+}
+
+.navbar .nav-link::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #ff8900;
+  transition: width 0.2s;
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+}
+
+.navbar .nav-link:hover::after, .navbar .nav-link:focus::after {
+  width: 100%;
+}
+
+.btn, .btn:focus {
+  transition: background 0.2s, color 0.2s;
+  outline: none;
+  box-shadow: none;
+}
+
+.btn:hover, .btn:active {
+  background: #ff8900 !important;
+  color: #0a2c45 !important;
+}
+
+header {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.display-3 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.lead {
+  font-size: 1.35rem;
+  color: #e0e6ed;
+}
+
+/* Hero Section Accent */
+/* Remove old hero-bg-accent */
+.hero-bg-accent {
+  display: none;
+}
+
+/* New blurred, burned-out circles for hero section */
+.hero-bg-burned-orange {
+  position: absolute;
+  top: -120px;
+  left: -120px;
+  width: 420px;
+  height: 420px;
+  background: #ff8900;
+  opacity: 0.18;
+  filter: blur(80px);
+  border-radius: 50%;
+  z-index: 0;
+}
+.hero-bg-burned-blue {
+  position: absolute;
+  bottom: -120px;
+  right: -120px;
+  width: 420px;
+  height: 420px;
+  background: #0a2c45;
+  opacity: 0.16;
+  filter: blur(80px);
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+/* Feature Icon */
+.feature-icon {
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ff890015;
+  color: #ff8900;
+  border-radius: 50%;
+  font-size: 2rem;
+  margin: 0 auto 1rem auto;
+}
+
+/* Testimonial Avatar */
+.testimonial-avatar {
+  width: 48px;
+  height: 48px;
+  background: #0a2c45;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  box-shadow: 0 2px 8px #0a2c4520;
+}
+
+/* Quote style for testimonials */
+.testimonial-quote {
+  font-style: italic;
+  position: relative;
+  padding-left: 1.5rem;
+}
+.testimonial-quote:before {
+  content: '“';
+  font-size: 2rem;
+  color: #ff8900;
+  position: absolute;
+  left: 0;
+  top: -0.5rem;
+}
+
+/* Pricing Card Highlight */
+.pricing-highlight {
+  border: 3px solid #ff8900 !important;
+  box-shadow: 0 4px 32px #ff890025;
+}
+
+.pricing-badge {
+  background: #ff8900;
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 700;
+  border-radius: 12px;
+  padding: 0.25rem 0.75rem;
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+
+/* Button hover */
+.btn-premium:hover, .btn-premium:focus {
+  background: #0a2c45 !important;
+  color: #fff !important;
+  box-shadow: 0 4px 16px #0a2c4520;
+}
+
+/* Section spacing */
+section {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  margin-bottom: 0;
+}
+
+.hotel-card {
+  border-radius: 2rem;
+  border: 1px solid #0a2c45;
+  box-shadow: 0 2px 16px 0 rgba(10,44,69,0.06);
+  transition: box-shadow 0.2s, transform 0.2s, border-color 0.2s;
+  background: #fff;
+  overflow: hidden;
+}
+.hotel-card:hover {
+  box-shadow: 0 8px 32px 0 rgba(10,44,69,0.13);
+  transform: translateY(-4px) scale(1.02);
+  border-color: #ff8900;
+}
+
+.btn-book-now {
+  background: #ff8900;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 1.5rem;
+  font-size: 1.1rem;
+  padding: 0.5rem 1.5rem;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px #ff890025;
+}
+.btn-book-now:hover, .btn-book-now:focus {
+  background: #0a2c45;
+  color: #fff;
+  box-shadow: 0 4px 16px #0a2c4520;
+}
+
+.main-content-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+@media (min-width: 1400px) {
+  .main-content-wrapper {
+    max-width: 1320px;
+  }
+}
+
+@media (max-width: 768px) {
+  .display-3 {
+    font-size: 2.2rem;
+  }
+  header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .hero-bg-accent {
+    width: 240px;
+    height: 240px;
+    left: -40px;
+    top: -20px;
+  }
+}
+
+.pricing-card, .pricing-highlight {
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.pricing-card:hover, .pricing-highlight:hover {
+  box-shadow: 0 8px 32px #ff890025, 0 2px 16px #0a2c4520;
+  transform: translateY(-4px) scale(1.03);
+  border-color: #ff8900 !important;
+}
+
+/* Owner Landing Page Feature Hover */
+.owner-feature-block {
+  transition: box-shadow 0.2s, transform 0.2s, background 0.2s;
+  cursor: pointer;
+}
+.owner-feature-block:hover {
+  box-shadow: 0 8px 32px #0a2c4520;
+  transform: translateY(-4px) scale(1.03);
+  background: #fff7f0;
+}
+
+/* Owner Landing Page Button Hover */
+.owner-cta-btn, .owner-cta-btn:focus {
+  transition: background 0.2s, color 0.2s, transform 0.2s;
+}
+.owner-cta-btn:hover {
+  background: #0a2c45 !important;
+  color: #fff !important;
+  transform: scale(1.04);
+}
+
+/* Owner Testimonial Hover */
+.owner-testimonial {
+  transition: box-shadow 0.2s, transform 0.2s, background 0.2s;
+}
+.owner-testimonial:hover {
+  box-shadow: 0 8px 32px #ff890025;
+  background: #fff7f0;
+  transform: scale(1.02);
+}
